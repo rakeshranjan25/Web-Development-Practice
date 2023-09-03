@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+        body{
+            text-align: center;
+            background: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Registration Form</h2>
+        <form action="action.php">
+            <label for="name">
+                Name:
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required />
+            </label>
+            <br/><br>
+            <label for="email">
+                Email:
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required/>
+            </label>
+            <br/><br>
+            <label for="mobile">
+                Mobile:
+                <input type="tel" name="mobile" id="phone" placeholder="Enter your mobile number" pattern="[0-9]{10}" />
+            </label>
+            <br/><br>
+            <label for="password">
+                password:
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </label>
+            <br><br>
+            <label for="date of birth">
+                Date Of Birth:
+                <input type="date" name="DOB" id="DOB">
+            </label>
+            <br><br>
+            <label for="gender">
+               Gender: 
+               <label for="male">
+               <input type="radio" name="gender" id="male" value="male">Male
+               </label>
+               <label for="female">
+               <input type="radio" name="gender" id="female" value="female">Female
+               </label>
+            </label>
+            <br><br>
+            <label for="subject">
+                Subject:
+                <input type="checkbox" name="subject" id="maths" value="maths" >Maths
+                <input type="checkbox" name="subject" id="Science" value="Science" >Science
+                <input type="checkbox" name="subject" id="Computer" value="Computer" checked>Computer
+            </label>
+            <br><br>
+            <label for="age">
+                Age:
+                <input type="number" name="age" id="age">
+            </label>
+            <br><br>
+            <label for="shift">
+                Shift:
+                <select name="shift" id="shift">
+                    <option value="">choose your shift</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternon">Afternon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </label>
+            <br><br>
+            <label for="about">
+                Write about your self:
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <hr>
+            <input type="submit" value="submit">
+            &nbsp;
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+
+</html>
