@@ -1,0 +1,32 @@
+.container{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+.outer{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(102, 102, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(247, 102, 117);
+    border: 2px solid black;
+}
