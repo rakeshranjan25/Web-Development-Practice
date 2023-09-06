@@ -1,0 +1,40 @@
+
+.respo{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+@media (max-width: 400px) {
+    .respo{
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .respo{
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .respo{
+        background-color: brown;
+        color: white;
+    }
+}  
+
+@media (min-width: 600px) {
+    .respo{
+        background-color: blueviolet;
+        color: yellow;
+    }
+}
